@@ -1,0 +1,13 @@
+
+*.jar
+
+*.zip
+*.war
+*.ear
+
+
+#IntelliJ files
+
+**/*.iml
+
+**/.idea
