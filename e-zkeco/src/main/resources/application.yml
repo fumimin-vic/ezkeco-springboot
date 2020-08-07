@@ -1,0 +1,30 @@
+#spring:
+#  profiles:
+#    active: dev
+server:
+  port: 8090
+  tomcat:
+    uri-encoding: utf-8
+management:
+  endpoint:
+    health:
+      show-details: always
+spring:
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+    session:
+      store-type: none
+  datasource:
+    url: jdbc:sqlserver://localhost\SQLSERVER2016:1434;DatabaseName=ezkeco
+    username: sa
+    password: 1
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    datasource.max-active: 20
+    datasource.max-idle: 8
+    datasource.min-idle: 8
+    datasource.initial-size: 10
+swagger:
+  enable: true
